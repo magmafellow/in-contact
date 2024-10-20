@@ -1,0 +1,38 @@
+.burger {
+  position: relative;
+  z-index: 107;
+  display: grid;
+  width: 34px;
+  height: 34px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  &__area {
+    display: flex;
+  }
+  &__area:nth-child(2) {
+    justify-content: flex-end;
+  }
+  &__area:nth-child(3) {
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  &__area:nth-child(4) {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  
+  &__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 3px;
+    background-color: #fff;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1012px) {
+  .burger {
+    display: none;
+  }
+}
