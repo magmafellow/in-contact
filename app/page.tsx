@@ -1,3 +1,10 @@
+import './styles.module.scss'
+import Header from './ui/header/main'
+
 export default function Page() {
-  return <div></div>
+  return (
+    <div className=''>
+      <Header />
+    </div>
+  )
 }
