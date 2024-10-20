@@ -25,7 +25,6 @@ export default function Burger() {
 }
 
 const onBurgerClick = () => {
-  const mobileMenu = document.querySelector('#mobile-menu') as any
   const htmlElement = document.documentElement
   htmlElement?.classList.toggle('mobile-menu-active')
 }
