@@ -1,26 +1,28 @@
-'use client';
+'use client'
 
 import { useEffect } from 'react'
 import styles from './burger.module.scss'
 
 export default function Burger() {
   useEffect(effect, [])
-  
+
   return (
-    <div id='burger' className={`${styles.burger}`}>
-          <div className={`${styles.burger__area}`}>
-            <div className={`${styles.burger__dot}`}></div>
-          </div>
-          <div className={`${styles.burger__area}`}>
-            <div className={`${styles.burger__dot}`}></div>
-          </div>
-          <div className={`${styles.burger__area}`}>
-            <div className={`${styles.burger__dot}`}></div>
-          </div>
-          <div className={`${styles.burger__area}`}>
-            <div className={`${styles.burger__dot}`}></div>
-          </div>
+    <div id="burger" className={styles.burger}>
+      <div id="burger__inner" className={`${styles.burgerInner}`}>
+        <div className={`${styles.burgerInner__area}`}>
+          <div className={`${styles.burgerInner__dot}`}></div>
         </div>
+        <div className={`${styles.burgerInner__area}`}>
+          <div className={`${styles.burgerInner__dot}`}></div>
+        </div>
+        <div className={`${styles.burgerInner__area}`}>
+          <div className={`${styles.burgerInner__dot}`}></div>
+        </div>
+        <div className={`${styles.burgerInner__area}`}>
+          <div className={`${styles.burgerInner__dot}`}></div>
+        </div>
+      </div>
+    </div>
   )
 }
 

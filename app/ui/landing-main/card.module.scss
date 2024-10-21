@@ -1,0 +1,44 @@
+.card {
+  color: #fff;
+  
+
+  &__inner {
+    padding: 13px 24px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 30px;
+    max-width: 300px;
+    margin: auto;
+    border: 1px solid #252631;
+    border-radius: 24px;
+  }
+  &__titleBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+  }
+  &__description {
+
+  }
+  &__btnBox {
+    display: flex;
+    justify-content: center;
+  }
+  &__btn {
+    border-radius: 7px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    background-color: transparent;
+    padding: 10px 22px;
+  }
+}
+
+.titleBox {
+  &__title {
+    font-size: 30px;
+    font-weight: 500;
+  }
+}

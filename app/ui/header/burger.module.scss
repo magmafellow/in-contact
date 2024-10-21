@@ -1,4 +1,11 @@
 .burger {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.burgerInner {
   position: relative;
   z-index: 107;
   display: grid;
@@ -6,6 +13,7 @@
   height: 34px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  transition: 0.38s;
 
   &__area {
     display: flex;
