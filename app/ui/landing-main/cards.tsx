@@ -7,6 +7,8 @@ export default function Cards() {
       <div className={`${styles.cards__container} container`}>
         <div className={`${styles.cards__inner}`}>
           <Card />
+          <Card />
+          <Card />
         </div>
       </div>
     </div>

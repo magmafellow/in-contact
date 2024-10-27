@@ -1,3 +1,9 @@
 .cards {
-  
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    flex-flow: row wrap;
+  }
 }
